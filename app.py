@@ -42,8 +42,6 @@ def main():
             upsc_data = get_upsc_data()
 
             event = {
-                "@t": datetime.now(timezone.utc).isoformat(),
-                "@mt": "UPS full dump",
                 "ups": UPS_NAME,
                 **upsc_data
             }
